@@ -70,6 +70,7 @@ public class TestCases {
             driver.get("https://www.scrapethissite.com/pages/");
             WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(20));
             wait.until(ExpectedConditions.urlContains("pages"));
+            Thread.sleep(3000);
 
             WebElement link1= driver.findElement(By.linkText("Hockey Teams: Forms, Searching and Pagination"));
             Wrappers.clickOnElement(link1, driver);
@@ -118,6 +119,7 @@ public class TestCases {
             // TODO: handle exception
             e.printStackTrace();
         }
+        System.out.println("testcase01:Pass");
         System.out.println("End of testCase01");
     }
 
@@ -128,6 +130,7 @@ public class TestCases {
             driver.get("https://www.scrapethissite.com/pages/");
             WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(20));
             wait.until(ExpectedConditions.urlContains("pages"));
+            Thread.sleep(3000);
 
             WebElement link2=driver.findElement(By.linkText("Oscar Winning Films: AJAX and Javascript"));
             Wrappers.clickOnElement(link2, driver);
@@ -206,7 +209,7 @@ public class TestCases {
             // TODO: handle exception
             e.printStackTrace();
         }
-
+        System.out.println("testcase02:Pass");
         System.out.println("End of testCase02");
 
     }
